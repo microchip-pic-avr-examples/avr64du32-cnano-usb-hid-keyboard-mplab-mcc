@@ -1,6 +1,30 @@
-# Untracked files in MPLABX projects
-/**/build/*
-/**/nbproject/*
-!/**/nbproject/*.xml
-/**/dist/*
-/**/.generated_files/*
+# folders
+.generated_files
+build
+dist
+queuelogs
+
+/*/nbproject/*.mk
+/*/nbproject/*.bash
+/*/nbproject/*.properties
+/*/nbproject/private
+
+*ctu-file-list
+*.ctu-info
+
+# Studio Folders
+/*/[Dd]ebug/
+/*/[Rr]elease/
+/*/.vs/
+
+# Build Artifacts
+*.o
+*.d
+*.eep
+*.lst
+*.map
+*.srec
+*.yml
+*.bak*
+
+# Other

@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr64du32-cnano-usb-hid-keyboard-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "USB HID communication demo using on-board button",
         "projectName": "avr64du32-cnano-usb-hid-keyboard-mplab-mcc",
         "shortDescription": "This code example demonstrates the HID Keyboard class using the USB 2.0 device peripheral on the AVR DU family of MCUs.",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "AVR-Dx_DFP",
+            "semverRange": "^2.4.286"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.7.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,19 @@
                 "versionRange": "*"
             }
         },
-        "author": "Runar Saure",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Runar André Saure",
+        "peripherals": [
+            "USB",
+            "RTC",
+            "VREF",
+            "CMP"
+        ],
+        "keywords": [
+            "USB",
+            "HID",
+            "Button",
+            "Communication"
+        ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
