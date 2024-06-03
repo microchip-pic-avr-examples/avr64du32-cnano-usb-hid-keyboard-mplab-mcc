@@ -69,18 +69,17 @@ The Voltage Reference is set to 2.048V.
 
 #### Analog Comparator Setup
 
-##### Analog Comparator Control A Settings
-Under this register, the AC must be enabled by enabling bit 0.
+##### Analog Comparator Hardware Settings
+Under this register, the Analog Comparator must be enabled by toggling "Enable" under "Hardware Settings".
 <p><img src="images/mcc_analog_comparator_ctrla.jpg" width="350"/></p>
 
+##### Analog Comparator MUX Control Settings
+To measure the correct values, the positive input must be connected to AINP4, while the negative input is set to the reference pin DAC Reference for the analog comparator.
+<p><img src="images/mcc_analog_comparator_muxctrl.jpg" width="350"/></p>
 
 ##### Analog Comparator DAC Reference Settings
-The DACREF register must be set to a value that can detect the correct voltage level at minimum 0,4V. Refer to the [AVR64DU32 Curiosity Nano User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/AVR64DU32-Curiosity-Nano-UserGuide-DS50003671.pdf) to find the values for the voltage divider on Pin PC3. The DACREF value of 40 used in this project is a bit below the required DACREF value to detect 0,4V, and was selected to have some extra detection tolerance.
+The DACREF register must be set to a value that can detect the correct voltage level at minimum 0.4V. Refer to the [AVR64DU32 Curiosity Nano User Guide](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/UserGuides/AVR64DU32-Curiosity-Nano-UserGuide-DS50003671.pdf) to find the values for the voltage divider on Pin PC3. The target voltage can be set directly in the "Requested Voltage (V)" input under "Hardware Settings". The reference voltage of 0.32V (DACREF = 40) used in this project is a bit below the required value, and was selected to have some extra detection tolerance.
 <p><img src="images/mcc_analog_comparator_dacref.jpg" width="350"/></p>
-
-##### Analog Comparator MUX Control Settings
-To measure the correct values, the positive input must be connected to AINP4, While the negative input is set to the reference pin of the analog comparator.
-<p><img src="images/mcc_analog_comparator_muxctrl.jpg" width="350"/></p>
 
 #### Real-Time Counter Setup
 
@@ -89,7 +88,7 @@ On the Hardware settings, the "Enable RTC" can be disabled (Enabled by default),
 <p><img src="images/mcc_rtc_per.jpg" width="350"/></p>
 
 ##### Real-Time Counter Periodic Interrupt Control Settings
-The Periodic Interrupt Timer is enabled for this example, and the period selection is set to RTC Clock Cycles 1024. This value must be changed according to the clock source selection.
+The Periodic Interrupt Timer (PIT) is enabled for this example, and the period selection is set to RTC Clock Cycles 1024. This value must be changed according to the clock source selection.
 <p><img src="images/mcc_rtc_pitctrla.jpg" width="350"/></p>
 
 ##### Real-Time Counter Periodic Interrupt Interrupt Control Settings
