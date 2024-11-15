@@ -44,7 +44,7 @@
 
 void SYSCFG_Initialize(void)
 {
-    SYSCFG.VUSBCTRL = (1 << SYSCFG_USBVREG_bp); // USBVREG ENABLE;
+    SYSCFG.VUSBCTRL = (0 << SYSCFG_USBVREG_bp); // USBVREG DISABLE;
 }
 
 uint8_t SYSCFG_GetRevId(void)

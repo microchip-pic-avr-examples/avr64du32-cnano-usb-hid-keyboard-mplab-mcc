@@ -98,7 +98,7 @@ static USB_APPLICATION_CONFIGURATION_t configurationDescriptor = {
             .header =
             {
                 .bLength = sizeof (USB_CONFIGURATION_DESCRIPTOR_t),
-                .bDescriptorType = (uint8_t)USB_DESCRIPTOR_TYPE_CONFIGURATION,
+                .bDescriptorType = (uint8_t) USB_DESCRIPTOR_TYPE_CONFIGURATION,
             },
             .wTotalLength = sizeof (USB_APPLICATION_CONFIGURATION1_t),
             .bNumInterfaces = USB_INTERFACE_NUM,
@@ -130,7 +130,7 @@ static USB_APPLICATION_CONFIGURATION_t configurationDescriptor = {
                 .bDescriptorType = USB_DT_HID,
             },
             .bcdHID = 0x111, // 1.11
-            .bCountryCode = USB_HID_COUNTRY_NORWEGIAN,
+            .bCountryCode = USB_HID_COUNTRY_US,
             .bNumDescriptors = USB_HID_NUM_DESC,
             .bRDescriptorType = USB_DT_HID_REPORT,
             .wDescriptorLength = USB_HID_REPORT_DESCRIPTOR_SIZE,

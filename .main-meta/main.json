@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.avr64du32-cnano-usb-hid-keyboard-mplab-mcc",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "displayName": "USB HID communication demo using on-board button",
         "projectName": "avr64du32-cnano-usb-hid-keyboard-mplab-mcc",
         "shortDescription": "This code example demonstrates the HID Keyboard class using the USB 2.0 device peripheral on the AVR DU family of MCUs.",
